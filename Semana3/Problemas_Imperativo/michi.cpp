@@ -58,7 +58,8 @@ void colocarSimbolo(Casilla* tablero, int posFila, int posCol, Simbolo simbolo){
             return;            
         }
     }
-    temp->simbolo = simbolo;
+    if(temp->simbolo == nada)temp->simbolo = simbolo;
+    else std::cout << "Este espacio ya esta ocupado" << std::endl;
 }
 void pintarPorSimbolo(Simbolo simbolo){
     std::string s;
@@ -158,9 +159,9 @@ bool obtenerGanador(Casilla* tablero, int tam, Simbolo simbolo){
 
 int main(){
     Casilla* tablero = armarTablero(3);
-    colocarSimbolo(tablero, 1,2,cruz);
+    colocarSimbolo(tablero, 1,3,cruz);
     colocarSimbolo(tablero, 2,2,cruz);
-    colocarSimbolo(tablero, 3,2,cruz);
+    colocarSimbolo(tablero, 2,2,cruz);
     pintar(tablero);
     if(obtenerGanador(tablero, 3, cruz)) std::cout << "Si";
     else std::cout << "NO" ;
