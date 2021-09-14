@@ -57,6 +57,7 @@ void registrar_nota(Seccion* sec, std::string codigo ,int nota, Tipo tipo){
                 pNota->siguienteNota = alumNota;
             }
         }
+        pAlum = pAlum->siguienteAlumno;
     }
 }
 
@@ -71,6 +72,7 @@ float calcular_promedio(Seccion* sec){
             if(pNota->tipo == Tipo::TA) promAlum += pNota->valor*3;
             else if(pNota->tipo == Tipo::EP) promAlum += pNota->valor*3;
             else if(pNota->tipo == Tipo::EF) promAlum += pNota->valor*4;
+            pNota = pNota->siguienteNota;
         }
         promAlum = promAlum / 10;
         prom += promAlum; 
@@ -80,6 +82,14 @@ float calcular_promedio(Seccion* sec){
 }
 
 int main(){
+
+    Seccion* sec = new Seccion();
+    registrar_alumno(sec, "20191425" , "Ingenieria de sistemas");
+    registrar_nota(sec, "20191425" , 20 , Tipo::EF);
+    registrar_nota(sec, "20191425" , 12 , Tipo::TA);
+    registrar_nota(sec, "20191425" , 20 , Tipo::EP);
+    float nota = calcular_promedio(sec);
+    std::cout << nota << std::endl;
 
     return 0;
 }
