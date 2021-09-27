@@ -34,5 +34,5 @@
       (/ sum cont)
       (prom-tail (cdr lista) (+ sum (car lista)) (+ cont 1))
       )
-  )
+)
 (define main (display (prom-tail lista_numeros 0 0)))
