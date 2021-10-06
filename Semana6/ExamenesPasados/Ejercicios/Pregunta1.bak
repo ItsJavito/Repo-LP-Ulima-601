@@ -1,0 +1,12 @@
+#lang racket
+
+(require csv-reading)
+
+(define lista_data(csv->list
+ (make-csv-reader
+ (open-input-file "data_contaminacion.csv")
+ '((separator-chars #\,)
+ (strip-leading-whitespace? . #t)
+ (strip-trailing-whitespace? . #t)))))
+
+lista_data

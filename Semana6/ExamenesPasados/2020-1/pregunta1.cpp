@@ -4,7 +4,7 @@ struct Posicion
 {
  int fila;
  int columna;
- int valor;
+ int valor = 0;
  Posicion* SiguienteFila = nullptr;
  Posicion* SiguientePos = nullptr; 
 };

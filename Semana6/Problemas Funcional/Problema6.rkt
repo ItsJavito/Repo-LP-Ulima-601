@@ -2,9 +2,9 @@
 
 (define lista_numeros '(1 2 3 4 5 6 7 8))
 
-(define (cdr-tail lista Nlist)
+(define (tail-cdr lista Nlist)
     (if (empty? (cdr lista))
     Nlist
-    (cdr-tail (cdr lista) (append Nlist (list (car lista))))))
+    (tail-cdr (cdr lista) (append Nlist (list (car lista))))))
 
-(cdr-tail lista_numeros '())
+(tail-cdr lista_numeros '())
