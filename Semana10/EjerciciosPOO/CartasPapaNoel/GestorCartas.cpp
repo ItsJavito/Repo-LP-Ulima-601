@@ -66,6 +66,7 @@ void Gestor::borrarCarta(int num){
     if(num >= 0 && num < this->cartas.size()){
         this->bytesUsados -= this->cartas[num]->tam;
         this->numeroCartas--;
+        delete this->cartas[num];
         this->cartas.erase(cartas.begin() + num);
     }
 }
