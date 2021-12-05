@@ -1,0 +1,6 @@
+programa ejemplo {
+    variable varx;
+    varx=10;
+    varx = 12 - 4;
+    mostrar varx;
+}

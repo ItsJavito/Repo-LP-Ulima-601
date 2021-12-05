@@ -5,11 +5,13 @@
       "name": "C/C++ Runner: Debug Session",
       "type": "cppdbg",
       "request": "launch",
-      "args": [],
+      "args": [
+        ""
+      ],
       "stopAtEntry": false,
-      "cwd": "c:\\Users\\javie\\Desktop\\UNIVERSIDAD\\LenguajesProgramacion\\Repo-LP-Ulima-601\\Semana10\\EjerciciosPOO\\CartasPapaNoel",
+      "cwd": "c:/Users/javie/Desktop/UNIVERSIDAD/LenguajesProgramacion/Repo-LP-Ulima-601/Semana10/Blackjack",
       "environment": [],
-      "program": "c:\\Users\\javie\\Desktop\\UNIVERSIDAD\\LenguajesProgramacion\\Repo-LP-Ulima-601\\Semana10\\EjerciciosPOO\\CartasPapaNoel\\build\\Debug\\outDebug",
+      "program": "c:/Users/javie/Desktop/UNIVERSIDAD/LenguajesProgramacion/Repo-LP-Ulima-601/Semana10/Blackjack/build/Debug/outDebug",
       "internalConsoleOptions": "openOnSessionStart",
       "MIMode": "gdb",
       "miDebuggerPath": "C:\\MinGW\\bin\\gdb.exe",
