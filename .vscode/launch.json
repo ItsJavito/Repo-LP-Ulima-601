@@ -9,9 +9,9 @@
         ""
       ],
       "stopAtEntry": false,
-      "cwd": "c:/Users/javie/Desktop/UNIVERSIDAD/LenguajesProgramacion/Repo-LP-Ulima-601/Semana10/Blackjack",
+      "cwd": "c:/UNIVERSIDAD/LenguajesProgramacion/Repo-LP-Ulima-601/Semana 15/Scrum",
       "environment": [],
-      "program": "c:/Users/javie/Desktop/UNIVERSIDAD/LenguajesProgramacion/Repo-LP-Ulima-601/Semana10/Blackjack/build/Debug/outDebug",
+      "program": "c:/UNIVERSIDAD/LenguajesProgramacion/Repo-LP-Ulima-601/Semana 15/Scrum/build/Debug/outDebug",
       "internalConsoleOptions": "openOnSessionStart",
       "MIMode": "gdb",
       "miDebuggerPath": "C:\\MinGW\\bin\\gdb.exe",
